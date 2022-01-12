@@ -19,9 +19,12 @@
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
  */
 function sumOdds(numbers) {
-  // Your code here
-}
-// console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
+  let sum = 0
+
+  return numbers.map((olnyOddNumber) => numbers%2 === 1)
+
+  }
+//console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
 /**
  * characterCount(string, c):
@@ -37,8 +40,10 @@ function sumOdds(numbers) {
  * Another Hint: Use string methods to make it case-insensitive
  */
 function characterCount(string, c) {
-  // Your code here
+  return string.toUpperCase().map((name) => name.toUpperCase().filter((character) => character === "c"))
+
 }
+
 // console.log(characterCount("Character Count is clever", "c"));
 
 /**
@@ -58,7 +63,7 @@ function characterCount(string, c) {
  * largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> 545
  */
 function largestIncrement(numbers) {
-  // Your code here
+  return 
 }
 // console.log(largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]));
 
@@ -74,7 +79,7 @@ function largestIncrement(numbers) {
  * afterX([11, 35, 52, 14, 56, 601, 777, 888, 999], 52) -> [14, 56, 601, 777, 888, 999]
  */
 function afterX(numbers, x) {
-  // Your code here
+  
 }
 // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
 
@@ -90,7 +95,7 @@ function afterX(numbers, x) {
  * Hint: Use string method .toUpperCase()
  */
 function abbreviate(firstName, lastName) {
-  // Your code here
+  return firstName[0].toUpperCase() && lastName[0].toUpperCase();
 }
 // console.log(abbreviate("miss", "Stephane"));
 
@@ -105,7 +110,14 @@ function abbreviate(firstName, lastName) {
  *
  */
 function isUpperCase(string) {
-  // Your code here
+  // return string.filter((string) => 
+  if (string === string.toUpperCase()){
+    return true
+  }
+
+  else {
+    return false
+  }
 }
 
 // console.log(isUpperCase("JCREW"));
@@ -121,7 +133,7 @@ function isUpperCase(string) {
  *
  */
 function elementInArray(numbers, x) {
-  // Your code here
+  return numbers.some((number) => number === x)
 }
 // console.log(elementInArray([5, 6, 7], 8));
 
